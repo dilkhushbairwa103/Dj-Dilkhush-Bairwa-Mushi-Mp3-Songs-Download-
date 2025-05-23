@@ -1,302 +1,85 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DjDilkhush Bairwa Mushi | Premium Music Downloads</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <!-- Floating Music Particles -->
-  <div class="music-particle" style="left: 5%; top: 100%; animation-delay: 0s;"><i class="fas fa-music"></i></div>
-  <div class="music-particle" style="left: 15%; top: 100%; animation-delay: 1s;"><i class="fas fa-music"></i></div>
-  <div class="music-particle" style="left: 25%; top: 100%; animation-delay: 2s;"><i class="fas fa-music"></i></div>
-  <div class="music-particle" style="left: 35%; top: 100%; animation-delay: 3s;"><i class="fas fa-music"></i></div>
-  <div class="music-particle" style="left: 45%; top: 100%; animation-delay: 4s;"><i class="fas fa-music"></i></div>
-  <div class="music-particle" style="left: 55%; top: 100%; animation-delay: 5s;"><i class="fas fa-music"></i></div>
-  <div class="music-particle" style="left: 65%; top: 100%; animation-delay: 6s;"><i class="fas fa-music"></i></div>
-  <div class="music-particle" style="left: 75%; top: 100%; animation-delay: 7s;"><i class="fas fa-music"></i></div>
-  <div class="music-particle" style="left: 85%; top: 100%; animation-delay: 8s;"><i class="fas fa-music"></i></div>
-  <div class="music-particle" style="left: 95%; top: 100%; animation-delay: 9s;"><i class="fas fa-music"></i></div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">DjDilkhushBairwaMushi</div>
-  </header>
-
-  <!-- Search Bar -->
-  <div class="search-container">
-    <input type="text" class="search-bar" placeholder="Search your favorite songs...">
-    <i class="fas fa-search search-icon"></i>
+<!-- Header -->
+<div class="header">
+  <img src="/storage/emulated/0/pixelLab/20241126_083951.png" alt="Logo" class="logo">
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
+</div>
 
-  <!-- Main Content -->
-  <div class="container">
-    <div class="section-title">
-      <h1>Premium Music Collection</h1>
-    </div>
+<!-- Mobile Menu -->
+<ul class="mobile-menu" id="mobileMenu">
+  <li><a href="https://dilkhushbairwa103.github.io/Dj-Dilkhush-Bairwa-Mushi-Mp3-Songs-Download-/#">Home</a></li>
+  <li><a href="https://t.me/djremixdilkhushbairwa">Join Telegram</a></li>
+  <li><a href="https://dilkhushbairwa103.github.io/AboutDjDilkhushBairwaMushi-/">About Us</a></li>
+  <li><a href="https://wa.me/917568717301">Contact Us</a></li>
+</ul>
 
-    <div class="songs-grid">
-      <!-- Song 1 -->
-      <div class="song-card">
-        <div class="song-art">
-          <i class="fas fa-headphones"></i>
-        </div>
-        <div class="song-info">
-          <h3 class="song-title">Dil Maro Todgi Nash Kargi</h3>
-          <span class="song-artist">DjDilkhush Bairwa Mushi</span>
-          <div class="audio-container">
-            <audio controls>
-              <source src="/Dj-Dilkhush-Bairwa-Mushi-Mp3-Songs-Download-
-/songs/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <a href="scr/songs/Dil Maro Todgi nash Kargi - DjDilkhush Bairwa Mushi 1.mp3" download class="download-btn">
-            <i class="fas fa-download"></i> Download MP3
-          </a>
-        </div>
-      </div>
+<!-- CSS -->
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: black;
+  color: white;
+}
 
-      <!-- Song 2 -->
-      <div class="song-card">
-        <div class="song-art">
-          <i class="fas fa-compact-disc"></i>
-        </div>
-        <div class="song-info">
-          <h3 class="song-title">Gangster Mashup Song 2025</h3>
-          <span class="song-artist">Dj Dilkhush Bairwa Mushi</span>
-          <div class="audio-container">
-            <audio controls>
-              <source src="/Dj-Dilkhush-Bairwa-Mushi-Mp3-Songs-Download-
-/songs/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <a href="src/Dj-Dilkhush-Bairwa-Mushi-Mp3-Songs-Download-
-/songs/GangSter Mashup REMIX - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
-            <i class="fas fa-download"></i> Download MP3
-          </a>
-        </div>
-      </div>
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: black;
+}
 
-      <!-- Song 3 -->
-      <div class="song-card">
-        <div class="song-art">
-          <i class="fas fa-music"></i>
-        </div>
-        <div class="song-info">
-          <h3 class="song-title">Kone Baitu Thar Lar Telar Me Betungi</h3>
-          <span class="song-artist">DjDilkhush Bairwa Mushi</span>
-          <div class="audio-container">
-            <audio controls>
-              <source src="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <a href="src/Kone Baitu Thar Lar Telar Me Betungi [Mdn Famda] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
-            <i class="fas fa-download"></i> Download MP3
-          </a>
-        </div>
-      </div>
-      
-      <!-- Song 4 -->
-      <div class="song-card">
-        <div class="song-art">
-          <i class="fas fa-music"></i>
-        </div>
-        <div class="song-info">
-          <h3 class="song-title">Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh</h3>
-          <span class="song-artist">DjDilkhush Bairwa Mushi</span>
-          <div class="audio-container">
-            <audio controls>
-              <source src="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <a href="src/Aaj Kaal Ki Chhoriya Do Do Aashiq RakheChh [Hanraj Khtna] - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
-            <i class="fas fa-download"></i> Download MP3
-          </a>
-        </div>
-      </div>
-      
-      <!-- Song 5 -->
-      <div class="song-card">
-        <div class="song-art">
-          <i class="fas fa-music"></i>
-        </div>
-        <div class="song-info">
-          <h3 class="song-title">Number 10 Ka Not Pe Degi</h3>
-          <span class="song-artist">DjDilkhush Bairwa Mushi</span>
-          <div class="audio-container">
-            <audio controls>
-              <source src="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <a href="src/Number 10 Ka Not Pe Degi - DjDilkhush Bairwa Mushi.mp3" download class="download-btn">
-            <i class="fas fa-download"></i> Download MP3
-          </a>
-        </div>
-      </div>
-      
-      <!-- Song 6 -->
-      <div class="song-card">
-        <div class="song-art">
-          <i class="fas fa-music"></i>
-        </div>
-        <div class="song-info">
-          <h3 class="song-title">Roop Ki Rupali Janu Nakhrali</h3>
-          <span class="song-artist">DjDilkhush Bairwa Mushi</span>
-          <div class="audio-container">
-            <audio controls>
-              <source src="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <a href="src/Roop Ki Rupali Janu Nakhrali [ManShing Meena].... Dilkhush In The Mix.mp3" download class="download-btn">
-            <i class="fas fa-download"></i> Download MP3
-          </a>
-        </div>
-      </div>
-      
-      <!-- ADD MORE SONGS HERE USING THIS TEMPLATE -->
-      <!-- Song Template - Copy and paste this block to add more songs -->
-      <div class="song-card">
-        <div class="song-art">
-          <i class="fas fa-music"></i> <!-- Change icon as needed (fa-headphones, fa-compact-disc) -->
-        </div>
-        <div class="song-info">
-          <h3 class="song-title">SONG_TITLE_HERE</h3>
-          <span class="song-artist">ARTIST_NAME_HERE</span>
-          <div class="audio-container">
-            <audio controls>
-              <source src="PATH_TO_MP3_FILE" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <a href="PATH_TO_MP3_FILE" download class="download-btn">
-            <i class="fas fa-download"></i> Download MP3
-          </a>
-        </div>
-      </div>
-      <!-- End of Song Template -->
-    </div>
+.logo {
+  height: 50px;
+}
 
-    <!-- Loading Indicator (for future dynamic loading) -->
-    <div class="loader" id="loader">
-      <i class="fas fa-spinner"></i>
-    </div>
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
 
-    <!-- YouTube CTA -->
-    <div class="youtube-cta">
-      <a href="https://www.youtube.com/@djdilkhushbairwamushi102?si=B3kUPuI-k9MIgX1J" target="_blank" class="youtube-btn">
-        <i class="fab fa-youtube"></i> Subscribe on YouTube
-      </a>
-    </div>
-  </div>
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-column">
-        <h3>About</h3>
-        <p>DjDilkhush Bairwa Mushi is a premium music producer and DJ creating amazing remixes and original tracks that captivate audiences worldwide.</p>
-        <div class="social-links">
-          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/dilkhushbairwa103_?igsh=MXAyeXhsMG8zNXdjeA==" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-soundcloud"></i></a>
-        </div>
-      </div>
-      
-      <div class="footer-column">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="https://dilkhushbairwa103.github.io/Dj-Dilkhush-Bairwa-Mushi-Mp3-Songs-Download-/#">Home</a></li>
-          <li><a href="#">Latest Releases</a></li>
-          <li><a href="#">Popular Songs</a></li>
-          <li><a href="#">Remixes</a></li>
-          <li><a href="https://wa.me/917568717301">Contact</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer-column">
-        <h3>Contact</h3>
-        <div class="contact-info">
-          <p><i class="fas fa-envelope"></i> contact@dilkhushmushiofficial@gmail.com</p>
-          <p><i class="fas fa-phone"></i> +91 7568717301</p>
-          <p><i class="fas fa-map-marker-alt"></i> Rajasthan, India</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="copyright">
-      <p>&copy; 2025 DjDilkhushBairwaMushi. All Rights Reserved.</p>
-    </div>
-  </footer>
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: black;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  padding-left: 20px;
+}
 
-  <script>
-    // Enhanced Search functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      const searchInput = document.querySelector('.search-bar');
-      searchInput.addEventListener('input', function() {
-        const term = this.value.toLowerCase();
-        const cards = document.querySelectorAll('.song-card');
-        let visibleCards = 0;
-        
-        cards.forEach(card => {
-          const title = card.querySelector('.song-title').textContent.toLowerCase();
-          const artist = card.querySelector('.song-artist').textContent.toLowerCase();
-          const isVisible = (title.includes(term) || artist.includes(term));
-          
-          if (isVisible) {
-            card.style.display = 'flex';
-            visibleCards++;
-          } else {
-            card.style.display = 'none';
-          }
-        });
-        
-        // Show message if no results found
-        const noResults = document.getElementById('no-results');
-        if (visibleCards === 0 && term.length > 0) {
-          if (!noResults) {
-            const message = document.createElement('div');
-            message.id = 'no-results';
-            message.style.textAlign = 'center';
-            message.style.margin = '2rem 0';
-            message.style.color = 'white';
-            message.style.fontSize = '1.2rem';
-            message.textContent = 'No songs found matching your search';
-            document.querySelector('.songs-grid').appendChild(message);
-          }
-        } else if (noResults) {
-          noResults.remove();
-        }
-      });
-      
-      // Audio player enhancements
-      document.querySelectorAll('audio').forEach(audio => {
-        audio.volume = 2.0; // Set default volume to 200%
-        
-        // Add event listeners for play/pause
-        audio.addEventListener('play', function() {
-          const card = this.closest('.song-card');
-          card.style.transform = 'translateY(-10px)';
-          card.style.boxShadow = '0 15px 40px rgba(138, 43, 226, 0.4)';
-        });
-        
-        audio.addEventListener('pause', function() {
-          const card = this.closest('.song-card');
-          card.style.transform = '';
-          card.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.2)';
-        });
-      });
-    });
-  </script>
-</body>
-</html>               
+.mobile-menu li {
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+</style>
+
+<!-- JS -->
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
+</script>
